@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https _fonts.googleapis.com_css family=Montserrat.css">
+    <link rel="stylesheet" href="https _fonts.googleapis.com_css family=Roboto.css">
+    <link rel="stylesheet" href="https _maxcdn.bootstrapcdn.com_bootstrap_4.1.3_css_bootstrap.min.css">
+    <script src="https _ajax.googleapis.com_ajax_libs_jquery_3.3.1_jquery.min.js"></script>
+    <script src="https _cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.min.js"></script>
+    <script src="https _maxcdn.bootstrapcdn.com_bootstrap_4.1.3_js_bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 d-none d-lg-block pb-2">
+                <div class="col-sm-12 px-0" id="menu1">
+                    <h3 class="pl-3 pb-4 pt-4 textLogo">LOGO</h3>                    
+                    <div class="flex-column">
+                        <ul class="navbar-nav font-weight-bold flex-column py-5">
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Shirts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Dresses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link dropdown-toggle pl-3 TextColorsubLi" data-toggle="collapse" data-target="#demo"
+                                    href="#">Jeans</a>
+                                <div id="demo" class="ml-4 px-3 collapse">
+                                    <a class="nav-link TextColorRelaxed text-body px-3 bg-light" href="#myPage">
+                                        <i class="fa fa-caret-right mr-3"></i>
+                                        Skinny
+                                    </a>
+                                    <a class="nav-link TextColorRelaxed px-3" href="#">Relaxed</a>
+                                    <a class="nav-link TextColorRelaxed px-3" href="#">Bootcut</a>
+                                    <a class="nav-link TextColorRelaxed px-3" href="#">Straight</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Jackets</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Gymwear</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Blazers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link pl-3 TextColorLi" href="#">Shoes</a>
+                            </li>
+                        </ul>
+
+
+                        <ul class="navbar-nav pt-5">
+                            <li>
+                                <a class="nav-link pl-3 text-body TextColorRelaxed" href="#contact">Contact</a>
+                            </li>
+                            <li>
+                                <a class="nav-link pl-3 text-body TextColorRelaxed" data-toggle="modal" href="#myModal">Newsletter</a>
+                            </li>
+                            <li>
+                                <a class="nav-link pl-3 text-body TextColorRelaxed" href="#footer">Subscribe</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="modal fade" id="myModal">
+                <div class="modal-dialog modal-dialog1 modal-lg p-4">
+                    <div class="modal-content rounded-0">
+
+                        <div class="d-flex justify-content-around pt-4 pb-2">
+                            <br>
+                            <p class="modal-title textLogo mx-5">NEWSLETTER</p>
+                            <button type="button" class="close fa fa-remove mr-1 fontText ml-5" data-dismiss="modal"></button>
+                        </div>
+
+                        <div class="modal-body text-center px-5">
+                            <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+                            <input class="form-control mt-3 rounded-0" placeholder="Enter e-mail">
+                        </div>
+
+                        <div class="mb-5 mt-2 justify-content-around d-flex">
+                            <button id="btn1" type="button" class="btn border-0 text-white px-4 py-2 rounded-0 colorSubscript" data-dismiss="modal">Subscribe</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="mySidenav" class="navLeft1">
+                <a href="#" class="closebtn" onclick="close1()">&times;</a>
+                <h3 class="TextLogo pl-3">LOGO</h3>
+                <div class="flex-column">
+                    <ul class="navbar-nav flex-column font-weight-bold py-5">
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Shirts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Dresses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link dropdown-toggle TextColorsubLi pl-3" data-toggle="collapse" data-target="#demo" href="#">Jeans</a>
+                            <div id="demo" class="ml-4 px-3 collapse">
+                                <a class="nav-link font-weight-bold text-body px-3 TextColorRelaxed" style="background-color: #f1f1f1"
+                                    href="#myPage">
+                                    <i class="fa fa-caret-right w3-margin-right mr-2"></i>
+                                    Skinny
+                                </a>
+                                <a class="nav-link TextColorRelaxed" href="#">Relaxed</a>
+                                <a class="nav-link TextColorRelaxed" href="#">Bootcut</a>
+                                <a class="nav-link TextColorRelaxed" href="#">Straight</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Jackets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Gymwear</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Blazers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link TextColorLi pl-3" href="#">Shoes</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav pt-5">
+                        <li>
+                            <a class="nav-link pl-3 text-body TextColorRelaxed" href="#contact">Contact</a>
+                        </li>
+                        <li>
+                            <a class="nav-link pl-3 text-body TextColorRelaxed" data-toggle="modal" href="#myModal">Newsletter</a>
+                        </li>
+                        <li>
+                            <a class="nav-link pl-3 text-body TextColorRelaxed" href="#footer">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-lg-none d-xl-none head clearfix px-4 py-4">
+                <h3 class="float-left textLogo pt-1">LOGO</h3>
+                <span class="aa float-right " onclick="open1()">&#9776;</span>
+            </div>
+
+            <div class="col-sm-12 col-lg-9 px-0">
+
+                <div class="clearfix p-4">
+                    <span class="float-left fontText">Jeans</span>
+                    <span class="float-right fontText">
+                        <i class="fa fa-shopping-cart px-3"></i>
+                        <i class="fa fa-search"></i>
+                    </span>
+                </div>
+
+                <div style="position: relative" class="px-4 text-white">
+                    <img src="jeans.jpg" style="width:100%">
+                    <div class="PlaceTextinImg">
+                        <p class="fontArrivals d-none d-sm-block">New arrivals</p>
+                        <p class="fontArrivals3 d-block d-sm-none">New arrivals</p>
+                        <p class="fontArrivals3 d-none d-sm-block">COLLECTION 2016</p>
+                        <button id="btn1" type="button" class="btn bg-button text-white border-0 rounded-0 px-4 py-2">SHOP NOW</button>
+                    </div>
+                </div>
+
+                <p class="text-secondary pt-3 px-4">8 items</p>
+                <div class="row px-4">
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <img src="jeans1.jpg" class="img">
+                        <p class="pt-3">Ripped Skinny Jeans<br><b>$24.99</b></p>
+                    </div>
+                    <div id="BuyImage" style="position: relative" class="col-6 col-sm-6 col-lg-3">
+                        <img src="jeans2.jpg" class="img">
+                        <div class="BuyNowbtnState">New</div>
+                        <button type="button" class="BuyNowbtnState2 btn bg-button text-white rounded-0">Buy Now <i class="fa fa-shopping-cart"></i></button>
+                        <p class="pt-3">Mega Ripped Jeans<br><b>$19.99</b></p>
+
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <img src="jeans3.jpg" class="img">
+                        <p class="pt-3">Washed Skinny Jeans<br><b>$20.50</b></p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <img src="jeans4.jpg" class="img">
+                        <p class="pt-3">Vintage Skinny Jeans<br><b>$14.99</b></p>
+                    </div>
+                </div>
+
+                <div class="row px-4">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <img src="jeans2.jpg" class="img">
+                        <p class="pt-3">Mega Ripped Jeans<br><b>$19.99</b></p>
+                    </div>
+                    <div class=" col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3">
+                        <img src="jeans3.jpg" class="img">
+                        <p class="pt-3">Washed Skinny Jeans<br><b>$20.50</b></p>
+                    </div>
+                    <div id="BuyImage" style="position: relative" class="col-6 col-sm-6 col-lg-3 col-xl-3">
+                        <img src="jeans4.jpg" class="img">
+                        <div class="BuyNowbtnState">Sale</div>
+                        <button type="button" class="BuyNowbtnState2 btn bg-button text-white rounded-0">Buy Now <i class="fa fa-shopping-cart"></i></button>
+                        <p class="pt-3">Vintage Skinny Jeans<br><b>$14.99</b></p>
+                    </div>
+                    <div class="col-6 col-sm-6 col-lg-3">
+                        <img src="jeans1.jpg" class="img">
+                        <p class="pt-3">Ripped Skinny Jeans<br><b>$24.99</b></p>
+                    </div>
+                </div>
+
+                <div class="text-white bg-button col-12 py-5 ">
+                    <div class="px-2">
+                        <p class="fontArrivals3">Subscribe</p>
+                        <p class="vipText">To get special offers and VIP treatment:</p>
+                        <form>
+                            <input type="email" class="form-control rounded-0" id="email" placeholder="Enter e-mail" name="email">
+                            <button id="btn1" type="submit" class="btn colorSubscript rounded-0 text-white mt-3">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="contact" class="bg-light">
+                    <div class="container">
+                        <div class="row py-5">
+                            <div class="col-4 col-sm-4 text-center">
+                                <p class="CotacRite">Contact</p>
+                                <p class="Question">Questions? Go ahead.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <input class="rounded-0 form-control " placeholder="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="rounded-0 form-control " placeholder="Email">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="rounded-0 form-control " placeholder="Subject">
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="rounded-0 form-control " placeholder="Message">
+                                    </div>
+                                    <button type="submit" class="btn btn-block rounded-0 text-white bg-button btn2">Send</button>
+                                </form>
+                            </div>
+                            <div class="col-4 col-sm-4 text-center">
+                                <p class="CotacRite">About</p>
+                                <p><a href="#" class="vipText text-body"><u>About us</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>We're hiring</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Support</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Find store</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Shipment</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Payment</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Gift card</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Return</u></a></p>
+                                <p><a href="#" class="vipText text-body"><u>Help</u></a></p>
+                            </div>
+                            <div class="col-4 col-sm-4">
+                                <p class="CotacRite">Store</p>
+                                <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+                                <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+                                <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+                                <p class="CotacRite">We accept</p>
+                                <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+                                <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+                                <br>
+                                <i class="fa fa-facebook-official hoverImgColor"></i>
+                                <i class="fa fa-instagram hoverImgColor"></i>
+                                <i class="fa fa-snapchat hoverImgColor"></i>
+                                <i class="fa fa-pinterest-p hoverImgColor"></i>
+                                <i class="fa fa-twitter hoverImgColor"></i>
+                                <i class="fa fa-linkedin hoverImgColor"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer id="footer" class="text-center text-white py-3 bg-button">
+                    <p class="mt-3">Powered by <a class="text-white" target="_blank" href="https://www.w3schools.com/w3css/default.asp"><u class="hoverImgColor">w3.css</u></a></p>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function open1() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.body.style.backgroundColor = "rgba(0,0,0,0.3)";
+        }
+
+        function close1() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.body.style.backgroundColor = "white";
+        }
+    </script>
+</body>
+
+</html>
